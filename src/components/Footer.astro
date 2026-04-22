@@ -1,11 +1,73 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+<footer class="pt-2 pb-10" style="background: oklch(0.972 0.014 85); border-top: 1px solid oklch(0.62 0.13 52 / 0.12);">
+  <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+
+    <!-- Top footer — brand + links -->
+    <div class="grid md:grid-cols-4 gap-10 py-14">
+
+      <!-- Brand column -->
+      <div class="md:col-span-2">
+        <a href="/" class="flex items-center gap-2.5 mb-4" aria-label="Wildroot Academy">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: oklch(0.43 0.09 145);">
+            <svg viewBox="0 0 20 20" class="w-5 h-5" fill="oklch(0.97 0.015 85)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M10 2C10 2 5.5 6.5 5.5 11.5C5.5 14.15 7.52 16.3 10 16.3C12.48 16.3 14.5 14.15 14.5 11.5C14.5 6.5 10 2 10 2Z"/>
+              <rect x="9.3" y="15" width="1.4" height="3" rx="0.7" fill="oklch(0.97 0.015 85)"/>
+            </svg>
+          </div>
+          <span class="font-display text-base font-semibold" style="color: oklch(0.28 0.028 78);">
+            Wildroot <span style="color: oklch(0.43 0.09 145);">Academy</span>
+          </span>
+        </a>
+        <p class="font-display italic text-sm leading-relaxed max-w-xs mb-5" style="color: oklch(0.52 0.04 78);">
+          Rooted in Faith. Alive with Wonder.
+        </p>
+        <p class="text-sm leading-relaxed max-w-xs" style="color: oklch(0.52 0.04 78);">
+          Free resources for Christian homeschool families — nature, history, and science through a Biblical worldview.
+        </p>
+      </div>
+
+      <!-- Resources links -->
+      <div>
+        <h4 class="font-display text-sm font-semibold mb-4 uppercase tracking-wider" style="color: oklch(0.38 0.032 78);">Explore</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#" class="text-sm transition-colors duration-150" style="color: oklch(0.52 0.04 78);"
+            onmouseover="this.style.color='oklch(0.43 0.09 145)'" onmouseout="this.style.color='oklch(0.52 0.04 78)'">Nature Study</a></li>
+          <li><a href="#" class="text-sm transition-colors duration-150" style="color: oklch(0.52 0.04 78);"
+            onmouseover="this.style.color='oklch(0.43 0.09 145)'" onmouseout="this.style.color='oklch(0.52 0.04 78)'">History Resources</a></li>
+          <li><a href="#" class="text-sm transition-colors duration-150" style="color: oklch(0.52 0.04 78);"
+            onmouseover="this.style.color='oklch(0.43 0.09 145)'" onmouseout="this.style.color='oklch(0.52 0.04 78)'">Science Guides</a></li>
+          <li><a href="#" class="text-sm transition-colors duration-150" style="color: oklch(0.52 0.04 78);"
+            onmouseover="this.style.color='oklch(0.43 0.09 145)'" onmouseout="this.style.color='oklch(0.52 0.04 78)'">Activity Packs</a></li>
+          <li><a href="/blog" class="text-sm transition-colors duration-150" style="color: oklch(0.52 0.04 78);"
+            onmouseover="this.style.color='oklch(0.43 0.09 145)'" onmouseout="this.style.color='oklch(0.52 0.04 78)'">Blog &amp; Notes</a></li>
+        </ul>
+      </div>
+
+      <!-- Community links -->
+      <div>
+        <h4 class="font-display text-sm font-semibold mb-4 uppercase tracking-wider" style="color: oklch(0.38 0.032 78);">Community</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#join" class="text-sm transition-colors duration-150" style="color: oklch(0.52 0.04 78);"
+            onmouseover="this.style.color='oklch(0.43 0.09 145)'" onmouseout="this.style.color='oklch(0.52 0.04 78)'">Join Our List</a></li>
+          <li><a href="#" class="text-sm transition-colors duration-150" style="color: oklch(0.52 0.04 78);"
+            onmouseover="this.style.color='oklch(0.43 0.09 145)'" onmouseout="this.style.color='oklch(0.52 0.04 78)'">Our Story</a></li>
+          <li><a href="#" class="text-sm transition-colors duration-150" style="color: oklch(0.52 0.04 78);"
+            onmouseover="this.style.color='oklch(0.43 0.09 145)'" onmouseout="this.style.color='oklch(0.52 0.04 78)'">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom strip -->
+    <div class="border-t pt-7 flex flex-col sm:flex-row items-center justify-between gap-4"
+      style="border-color: oklch(0.62 0.13 52 / 0.12);">
+      <p class="text-xs" style="color: oklch(0.60 0.04 78);">
+        &copy; {year} Wildroot Academy. All rights reserved.
+      </p>
+      <p class="text-xs font-display italic" style="color: oklch(0.60 0.04 78);">
+        Made with love for homeschool families ✦
+      </p>
     </div>
   </div>
 </footer>

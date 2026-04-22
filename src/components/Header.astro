@@ -1,11 +1,50 @@
 ---
 ---
-<header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/80 backdrop-blur-lg">
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <a href="/" class="text-lg font-bold tracking-tight text-surface-900 font-display">Your New Business</a>
-    <div class="flex items-center gap-6">
-      <a href="/blog" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Blog</a>
-      <a href="#cta" class="text-sm font-semibold bg-brand-500 text-white px-4 py-2 rounded-lg hover:bg-brand-600 transition-colors">Get Started</a>
+<header class="sticky top-0 z-50 border-b"
+  style="border-color: oklch(0.62 0.13 52 / 0.15); background: oklch(0.985 0.010 88 / 0.88); backdrop-filter: blur(16px) saturate(1.2);">
+  <nav class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 h-16 flex items-center justify-between">
+
+    <!-- Logo mark + wordmark -->
+    <a href="/" class="flex items-center gap-2.5 group" aria-label="Wildroot Academy home">
+      <!-- Leaf icon mark -->
+      <div class="w-8 h-8 rounded-lg flex items-center justify-center transition-colors duration-200"
+        style="background: oklch(0.43 0.09 145);"
+        onmouseover="this.style.background='oklch(0.34 0.08 145)'"
+        onmouseout="this.style.background='oklch(0.43 0.09 145)'">
+        <svg viewBox="0 0 20 20" class="w-5 h-5" fill="oklch(0.97 0.015 85)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 2C10 2 5.5 6.5 5.5 11.5C5.5 14.15 7.52 16.3 10 16.3C12.48 16.3 14.5 14.15 14.5 11.5C14.5 6.5 10 2 10 2Z"/>
+          <rect x="9.3" y="15" width="1.4" height="3" rx="0.7" fill="oklch(0.97 0.015 85)"/>
+        </svg>
+      </div>
+      <span class="font-display text-lg font-semibold tracking-tight"
+        style="color: oklch(0.28 0.028 78);">
+        Wildroot <span style="color: oklch(0.43 0.09 145);">Academy</span>
+      </span>
+    </a>
+
+    <!-- Nav links -->
+    <div class="flex items-center gap-1 sm:gap-2">
+      <a href="#resources"
+        class="hidden sm:inline-block px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150"
+        style="color: oklch(0.40 0.035 78);"
+        onmouseover="this.style.background='oklch(0.96 0.02 145)'; this.style.color='oklch(0.43 0.09 145)'"
+        onmouseout="this.style.background='transparent'; this.style.color='oklch(0.40 0.035 78)'">
+        Resources
+      </a>
+      <a href="/blog"
+        class="hidden sm:inline-block px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150"
+        style="color: oklch(0.40 0.035 78);"
+        onmouseover="this.style.background='oklch(0.96 0.02 145)'; this.style.color='oklch(0.43 0.09 145)'"
+        onmouseout="this.style.background='transparent'; this.style.color='oklch(0.40 0.035 78)'">
+        Blog
+      </a>
+      <a href="#join"
+        class="ml-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150 hover:-translate-y-px"
+        style="background: oklch(0.43 0.09 145); color: oklch(0.97 0.015 85); box-shadow: 0 2px 8px oklch(0.38 0.08 145 / 0.25);"
+        onmouseover="this.style.background='oklch(0.34 0.08 145)'"
+        onmouseout="this.style.background='oklch(0.43 0.09 145)'">
+        Join Free
+      </a>
     </div>
   </nav>
 </header>
